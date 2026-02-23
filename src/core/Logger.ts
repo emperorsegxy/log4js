@@ -40,6 +40,7 @@ export default class Logger {
         const logEntry: LogEntry = {
             event,
             id: this.generateId(),
+            pid: process.pid,
             level,
             timestamp: Date.now(),
             context: {

@@ -4,19 +4,9 @@ import { LogEntry } from "../core/types"
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import ConsoleTransport from "@/transports/ConsoleTransport"
 
 const __filename = fileURLToPath(import.meta.url)
-
-
-class ConsoleTransport implements Transport {
-    name: string
-    constructor() {
-        this.name = 'console'
-    }
-    log(entry: LogEntry) {
-        console.log(entry)
-    }
-}
 
 interface FileTransportOptions {
     name?: string
@@ -54,7 +44,7 @@ const logger = new Logger({
     level: 'trace'
 })
 
-logger.fatal('added.new.user', {
+logger.trace('added.new.user', {
     user: {
         id: Date.now(),
         email: 'example@mail.com'
