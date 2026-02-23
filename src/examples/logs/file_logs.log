@@ -1,0 +1,2 @@
+{"event":"added.new.user","id":"zdiafdj2p98","level":"fatal","timestamp":1771775440761,"context":{"runLate":{"timeout":2000},"user":{"id":1771775440761,"email":"example@mail.com"}}}
+{"event":"added.new.user","id":"anhlmjvza69","level":"fatal","timestamp":1771775462119,"context":{"runLate":{"timeout":2000},"user":{"id":1771775462119,"email":"example@mail.com"}}}
